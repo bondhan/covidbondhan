@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-export default function ReviewDetails() {
+export default function Settings() {
   return (
     <View>
-      <Text>ReviewDetails</Text>
+      <Text>Settings</Text>
     </View>
   );
 }
