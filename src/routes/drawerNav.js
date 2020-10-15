@@ -64,22 +64,21 @@ function AboutStackNavi() {
 }
 
 function SettingsStackNavi() {
-    return (
-        <NavigationContainer independent={true}>
-            <Stack.Navigator>
-                <Stack.Screen
-                    options={{
-                        title: 'Settings',
-                        headerLeft: ({}) => <HeaderLeft />,
-                    }}
-                    component={Settings}
-                    name="About"
-                />
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
+  return (
+    <NavigationContainer independent={true}>
+      <Stack.Navigator>
+        <Stack.Screen
+          options={{
+            title: 'Settings',
+            headerLeft: ({}) => <HeaderLeft />,
+          }}
+          component={Settings}
+          name="About"
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
-
 
 export default function HomeDrawer() {
   return (
@@ -87,7 +86,7 @@ export default function HomeDrawer() {
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeStackNavi} />
         <Drawer.Screen name="About" component={AboutStackNavi} />
-          <Drawer.Screen name="Settings" component={SettingsStackNavi} />
+        <Drawer.Screen name="Settings" component={SettingsStackNavi} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
